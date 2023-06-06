@@ -1,0 +1,58 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+
+
+
+        <changeSet id="create_student" author="manu.manjunatha">
+
+                <createTable tableName="student">
+
+                        <column name="id" type="int">
+
+                                <constraints primaryKey="true" nullable="false" />
+
+                        </column>
+
+                        <column name="name" type="varchar(50)">
+
+                                <constraints nullable="false" />
+
+                        </column>
+
+                </createTable>
+
+        </changeSet>
+
+
+
+        <changeSet id="create_employee" author="manu.manjunatha">
+
+                <createTable tableName="employee">
+
+                        <column name="id" type="int">
+
+                                <constraints primaryKey="true" nullable="false" />
+
+                        </column>
+
+                        <column name="firstname" type="varchar(50)">
+
+                                <constraints nullable="false" />
+
+                        </column>
+
+                        <column name="lastname" type="varchar(50)">
+
+                                <constraints nullable="false" />
+
+                        </column>
+
+                </createTable>
+
+        </changeSet>
+
+
+
+</databaseChangeLog>
