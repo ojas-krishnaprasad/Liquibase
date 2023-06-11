@@ -22,8 +22,14 @@
 
             <artifactId>mysql-connector-java</artifactId>
 
-            <version>8.0.16</version>
+            <version>8.0.33</version>
 
+        </dependency>
+
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+            <version>4.22.0</version>
         </dependency>
     </dependencies>
 
@@ -59,7 +65,7 @@
 
                     <artifactId>liquibase-maven-plugin</artifactId>
 
-                    <version>3.4.2</version>
+                    <version>4.22.0</version>
 
                     <configuration>
 
